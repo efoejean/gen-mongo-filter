@@ -5,7 +5,7 @@ const app = express();
 app.get("/api/listings", (req, res) => {
   /**
    * TODO: Use Insomnia to test this endpoint:
-   * 'http://localhost:3000/api/listings?price-lte=250&price-gte=150&beds=2&bed_type=real+bed'
+   * ''http://localhost:3000/api/listings?and-price-lte=250&and-price-gte=150&beds=2&bed_type=real+bed''
    *
    * TODO: Use `reduce` to generate: `{ $and: [{price: {$lte: 250}}, {price: {$gte: 150}}], beds: 2, bed_type:"Real Bed" }`. Hint: `Object.entries`.
    *
