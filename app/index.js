@@ -28,6 +28,7 @@ app.get("/api/listings", (req, res) => {
       v = value;
     }
 
+    // TODO: Abstract this to handle 'outer keywords'
     // Is this an 'and'?
     if (key.startsWith("and-")) {
       // Pull the field and the operator
