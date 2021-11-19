@@ -12,3 +12,7 @@ app.get("/api/listings", (req, res) => {
    * TODO: Send the response back as JSON. Hint: `res.json`.
    */
 });
+
+app.listen(3000, () => {
+  console.info("Server 🏃🏾‍♂️ at: http://localhost:3000");
+});
